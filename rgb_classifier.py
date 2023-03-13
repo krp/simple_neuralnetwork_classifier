@@ -45,7 +45,7 @@ import sys
 # Uncomment these to experiment with different amounts of training and see how the prediction accuracy changes.
 #NUM_EPOCHS = 2  # 62% accuracy with 14 training pics, 8 test pics, and 2 epochs
 #NUM_EPOCHS = 20  # 81% accuracy with 14 training pics, 8 test pics, and 20 epochs
-NUM_EPOCHS = 100  # 100% accuracy with 14 training pics, 8 test pics, and 20 epochs
+NUM_EPOCHS = 100  # 98% accuracy with 14 training pics, 8 test pics, and 100 epochs
 PATH = f'./rgb_predictor_{NUM_EPOCHS}_epochs.pth'
 TRAINING_DIR = './data/training'
 VALIDATION_DIR = './data/validation'
