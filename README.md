@@ -23,7 +23,7 @@ If you've got a card that support CUDA (NVIDIA card) then you can also install t
 
 ### Training
 
-Make sure you've got images in the ./data/training directory (use generate_trainingset.py if you don't) then run:
+Make sure you've got images in the `./data/training` directory (use generate_trainingset.py if you don't) then run:
 
 ```shell
 python rgb_classifier.py train
