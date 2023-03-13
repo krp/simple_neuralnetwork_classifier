@@ -1,5 +1,7 @@
 # Simple RGB Classifier using a Convolutional Neural Network
 
+![training data thumbnails of red green and blue colors](https://raw.githubusercontent.com/krp/simple_neuralnetwork_classifier/main/colors.png)
+
 Example of a super simple neural network that's trained on only 16 shades of  red, green, or blue, (see the ./data/training directory) and is able to identify what the primary color is in any other color it's given (see the ./training/validation and ./individual_test_color directories).
 
 Play around with the code, delete training data, regenerate it with new colors, experiment with different training sizes, neural network architectures, different optimizers, and a different number of epochs to see how you can get its accuracy to change.
@@ -28,6 +30,11 @@ python rgb_classifier.py train
 ```
 
 It'll create a `.pth` file which contains the model. This is then used to classify the dominant color of an image.
+
+![picture of other colors it can classify](https://raw.githubusercontent.com/krp/simple_neuralnetwork_classifier/main/extracolors.png)
+
+![image of the command line output of checking it against a color not in the training set](https://user-images.githubusercontent.com/2504972/224700993-e3f65528-9b84-404f-8a80-7cad0c253bd7.png)
+
 
 ### Validation
 
