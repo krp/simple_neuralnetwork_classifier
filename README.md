@@ -31,9 +31,6 @@ python rgb_classifier.py train
 
 It'll create a `.pth` file which contains the model. This is then used to classify the dominant color of an image.
 
-![picture of other colors it can classify](https://raw.githubusercontent.com/krp/simple_neuralnetwork_classifier/main/extracolors.png)
-
-![image of the command line output of checking it against a color not in the training set](https://user-images.githubusercontent.com/2504972/224700993-e3f65528-9b84-404f-8a80-7cad0c253bd7.png)
 
 
 ### Validation
@@ -54,6 +51,11 @@ python rgb_classifier.py individual_test_color/bluedabadee.png
 ```
 
 See what kind of prediction accuracy you get by also verifying the colors using the eye-dropper tool in an image editor. See what kind of results you get against the full white, grey, and black images when the network has no choice but to give one of three answers.
+
+![picture of other colors it can classify](https://raw.githubusercontent.com/krp/simple_neuralnetwork_classifier/main/extracolors.png)
+
+![image of the command line output of checking it against a color not in the training set](https://user-images.githubusercontent.com/2504972/224700993-e3f65528-9b84-404f-8a80-7cad0c253bd7.png)
+
 
 ### Experimentation & Learning
 
