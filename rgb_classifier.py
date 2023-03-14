@@ -53,6 +53,7 @@ NUM_TRAINING_FILES = 8
 
 # The colors we care about. This tuple can be changed to handle as many cases as you like.
 classes = ('red', 'green', 'blue')
+NUM_THINGS_TO_CLASSIFY = len(classes)
 
 # Simple helper function used to display an image.
 def imshow(img):
@@ -126,12 +127,12 @@ class Net(nn.Module):
         # 3 input image channel (RGB), 6 output channels, 5x5 square convolution
         # kernel
         self.pool = nn.MaxPool2d(2, 2)
-        self.conv1 = nn.Conv2d(3, 6, 5)
+        self.conv1 = nn.Conv2d(NUM_THINGS_TO_CLASSIFY, 6, 5)
         self.conv2 = nn.Conv2d(6, 16, 5)
         # an affine operation: y = Wx + b
         self.fc1 = nn.Linear(16 * 5 * 5, 120)  # 5*5 from image dimension
         self.fc2 = nn.Linear(120, 84)
-        self.fc3 = nn.Linear(84, 3)
+        self.fc3 = nn.Linear(84, NUM_THINGS_TO_CLASSIFY)
 
     def forward(self, x):
         # Max pooling over a (2, 2) window
